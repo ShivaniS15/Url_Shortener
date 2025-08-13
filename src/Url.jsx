@@ -11,6 +11,7 @@ export const Url = ()=>{
         .then((res)=>{
             setShortUrl(res.data.url.shortUrl)
             console.log('ApI response:', res.data.url.shortUrl);
+            setOriginalUrl("");
         })
         .catch((err)=> console.log(err)
         )
